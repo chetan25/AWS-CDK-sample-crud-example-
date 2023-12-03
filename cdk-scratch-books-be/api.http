@@ -1,0 +1,36 @@
+@token= eyJraWQiOiJ4UnBHcGxWVWJFdHpXTjg2dkJZaHNBVDVnVmh1Qit4azJtUzAycjNPSmU4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNzljZjY3Ny05ZmFiLTRjYWItOWUxZi1kZGRjMzU3NzM4M2IiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9DY0FXcW5CcmsiLCJjbGllbnRfaWQiOiI2bTk2bnRpaW0xc2hwMjZlZWkyanZpaWtkbyIsIm9yaWdpbl9qdGkiOiJhOGU5MWMwMi01OTkzLTQxMTgtYWViNC0wZGI2YzU3MDdmYTUiLCJldmVudF9pZCI6IjBhZjQwNTE2LTg5MjctNGYzMy1iNzY0LTA4MWIxZjJmOWE5YyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3MDE1MjMyNzAsImV4cCI6MTcwMTUyNjg3MCwiaWF0IjoxNzAxNTIzMjcwLCJqdGkiOiJhYWU0NTE2My01YTM1LTQ2ZTctODU1MS0yMTJmOTkyMzI4Y2EiLCJ1c2VybmFtZSI6ImJvb2t1c2VyIn0.MR4-xyLrcWc9U7hPZ5e9_TMUnPEQTSNdBm8FtbxD2jVHbHwOCmhERqShCU_3GsLSGGsLDdQoEBguWQJqxZqqWJtf_WpBhWlHpNuT2EmnDU-gyDbwVQIc44BvnT7dFqrD1qRpkmCaOg9jg-EB4INu8y4Z18yNxYwsZc7Mruwugbwfi5NQrmahTz_CPTBSnRhqLrYKempvHpQ2y0-jqZ1ic5ju2J9qL_rcqvWY4NTAJMBxcRmcaLp5iM2U2J8wDRhfDKce99F7yYwqpzGW0W6XutxIccUNrn2VoFyCgsM4dt_o8g1dRnYTtTSkirmIFjB1RvY4cjGUsi4a6uXnCj9Rcw
+@url = https://1dgfkm5ho5.execute-api.us-east-1.amazonaws.com/prod
+
+GET {{url}}/books
+Authorization: {{token}}
+
+###
+
+GET {{url}}/books?id=ccf8155d-066b-4b99-9030-ae9cb6c7d996
+Authorization: {{token}}
+
+###
+
+
+POST {{url}}/books
+Authorization: {{token}}
+content-type: application/json
+
+{
+    "author": "Rambo",
+    "title": "Best In Class Book",
+    "description": "Amazing Book to read"
+}
+
+###
+
+PUT {{url}}/books?id=ccf8155d-066b-4b99-9030-ae9cb6c7d996
+Authorization: {{token}}
+content-type: application/json
+
+{
+    "description": "Amazing Book to read",
+    "author": "Rambo"
+}
+
+###

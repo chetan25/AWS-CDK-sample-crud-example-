@@ -1,0 +1,24 @@
+.form {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid currentColor;
+  border-radius: 2rem;
+  min-height: 25rem;
+  gap: 1rem;
+}
+
+.auth-input {
+  margin-left: 1rem;
+}
+
+.submit-btn {
+  background: #635416;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  width: 19rem;
+  margin-top: 2rem;
+}
